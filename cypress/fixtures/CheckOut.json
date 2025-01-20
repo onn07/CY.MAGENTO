@@ -1,0 +1,10 @@
+{
+    "describe": "Check Out",
+    "beforeEach": {
+      "actions": [
+        { "cy.visit": "" },
+        { "cy.login": ["SayaPelajar12345@gmail.com", "SayaPelajar12345"] }
+      ]
+    }
+    
+}
