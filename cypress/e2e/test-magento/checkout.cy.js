@@ -6,14 +6,14 @@ describe('CheckOut', () =>{
         )
         
     it('Add to Cart and Checkout', () => {
-        cy.get('.category-product__image').first().click()
-        cy.get('.action.tocart.primary').click()
+        //cy.get('.categories-menu').first().click()
+        //cy.get('.action.tocart.primary').click()
         cy.get('.message-success').should('be.visible')
         cy.get('.minicart-wrapper').click()
         cy.get('.action.primary.checkout').click()
         cy.get('#shipping-address-form').within(() => {
         cy.get('#shipping-address-firstname').type('try')
-        cy.get('#shipping-address-lastname').type('123') //
+        cy.get('#shipping-address-lastname').type('123') 
         cy.get('#shipping-address-street1').type('Jalan Pancasila') 
         cy.get('#shipping-address-city').type('Montgomery') 
         cy.get('#shipping-address-postcode').type('36043') 
